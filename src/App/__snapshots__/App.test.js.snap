@@ -110,7 +110,6 @@ exports[`renders the UI as expected 1`] = `
         </button>
       </form>
     </section>
-    
     <section
       className="resultsList_1446zmd"
     >
