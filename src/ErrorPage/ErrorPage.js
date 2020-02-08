@@ -26,7 +26,7 @@ export default class ErrorPage extends React.Component {
 
 const styles = StyleSheet.create({
     errorPage: {
-        backgroundColor: 'tomato',
+        backgroundColor: '#1D3656',
         width: '75%',
         margin: 'auto auto',
         padding: '20px',
@@ -35,11 +35,12 @@ const styles = StyleSheet.create({
 
     errorHeader: {
         color: 'red',
-        textDecoration: 'underline'
+        textShadow: '2px 1px 2px black'
     },
 
     errorText: {
         color: '#bdbdbd',
-        fontSize: 'x-large'
+        fontSize: 'x-large',
+        textShadow: '2px 1px 2px black'
     }
 });

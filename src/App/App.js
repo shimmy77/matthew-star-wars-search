@@ -10,12 +10,17 @@ import ApiContext from "../ApiContext";
 export default class App extends React.Component {
   state = {
     results: [],
+    hasSearched: false,
     error: null
   };
 
   setResults = results => {
     this.setState({ results });
   };
+
+  setSearched = hasSearched => {
+    this.setState({ hasSearched })
+  }
 
   setError = error => {
     this.setState({ error });
@@ -24,7 +29,9 @@ export default class App extends React.Component {
   render() {
     const value = {
       results: this.state.results,
+      hasSearched: this.state.hasSearched,
       setResults: this.setResults,
+      setSearched: this.setSearched,
       setError: this.setError
     };
     return (
@@ -58,7 +65,6 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   app: {
     textAlign: "center",
-    backgroundColor: '#0B1F3A'
   },
 
   errorPage: {
